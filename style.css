@@ -1,6 +1,8 @@
 :root{
     --fonteTitulo: "Playfair Display", serif;
     --fonteTexto: "Poppins", sans-serif;
+    --tamanhoFonte: 10px;
+    --gradientRadialBackground: radial-gradient(rgba(0, 0, 0, 0.50) 500px, black);
 }
 
 *{
@@ -14,7 +16,7 @@
     height: 90vh;
     
     background:
-    radial-gradient(rgba(0, 0, 0, 0.50) 500px, black),
+    var(--gradientRadialBackground),
     url(imagens/banner.webp);
 
     background-size: cover;
@@ -33,7 +35,7 @@ header p{
     color: white;
     font-family: var(--fonteTexto);
 
-    font-size: 12px;
+    font-size: calc(var(--tamanhoFonte) * 1.2);
 }
 
 header img{
@@ -54,12 +56,12 @@ header img{
     font-family: var(--fonteTitulo);
     text-transform: uppercase;
 
-    font-size: 72px;
+    font-size: calc(var(--tamanhoFonte) * 7.2);
     line-height: 62px;
 }
 
 .titulo span{
-    font-size: 24px;
+    font-size: calc(var(--tamanhoFonte) * 2.4);
     line-height: 42px;
     padding-left: 16px;
 }
@@ -69,7 +71,7 @@ header img{
     text-align: right;
 
     width: 40%;
-    font-size: 24px;
+    font-size: calc(var(--tamanhoFonte) * 2.4);
 }
 
 .escolhaCidade{
@@ -77,7 +79,7 @@ header img{
         justify-content: flex-end;
         text-transform: uppercase;
     
-    font-size: 10px;
+    font-size: var(--tamanhoFonte);
     margin-top: 14px;
     gap: 2px;
 }
@@ -118,7 +120,7 @@ hr {
     font-family: var(--fonteTexto);
     text-transform: uppercase;
 
-    font-size: 12px;
+    font-size: calc(var(--tamanhoFonte) * 1.2);
 }
 
 .comprar{
@@ -127,7 +129,7 @@ hr {
     
     gap: 6px;
     color: white;
-    font-size: 8px;
+    font-size: calc(var(--tamanhoFonte) * 0.8);
 }
 
 .comprar p{
@@ -135,7 +137,7 @@ hr {
     text-transform: uppercase;
     font-family: var(--fonteTexto);
 
-    font-size: 8px;
+    font-size: calc(var(--tamanhoFonte) * 0.8);
 }
 
 .comprar img{
@@ -169,7 +171,7 @@ hr {
 .cidades legend p{
     color: white;
     font-family: var(--fonteTexto);
-    font-size: 10px;
+    font-size: var(--tamanhoFonte);
     
     padding: 10px;
 
@@ -222,7 +224,7 @@ hr {
     color: white; 
     font-family: var(--fonteTexto);
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: calc(var(--tamanhoFonte) * 1.5);
     margin-top: 60px;
     
     display: flex;
@@ -241,7 +243,7 @@ hr {
     color: white;
     font-family: var(--fonteTexto);
 
-    font-size: 10px;
+    font-size: var(--tamanhoFonte);
 }
 
 footer{
@@ -274,12 +276,12 @@ footer{
 .titulo h1{
     font-family: var(--fonteTitulo);
     text-transform: uppercase;
-    font-size: 72px;
+    font-size: calc(var(--tamanhoFonte) * 7.2);
     line-height: 62px;
 }
 
 .titulo span{
-    font-size: 24px;
+    font-size: calc(var(--tamanhoFonte) * 2.4);
     line-height: 42px;
     padding-left: 16px;
 }
@@ -296,7 +298,7 @@ footer{
 .instrucoes h2{
     text-transform: uppercase;
 
-    font-size: 10px;
+    font-size: var(--tamanhoFonte);
     margin-bottom: 12px;
 }
 
@@ -309,7 +311,7 @@ footer{
 }
 
 .institucional p{
-    font-size: 8px;
+    font-size: calc(var(--tamanhoFonte) * 0.8);
     padding: 2px;
 }
 
@@ -335,4 +337,8 @@ header img{
         justify-content: center;
         align-items: end;
         white-space: nowrap;
-}          
+}
+
+@media (max-width: 768px){
+    /*? diagramação para mobile*/
+}
