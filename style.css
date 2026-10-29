@@ -1,0 +1,338 @@
+:root{
+    --fonteTitulo: "Playfair Display", serif;
+    --fonteTexto: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.capa{
+    height: 90vh;
+    
+    background:
+    radial-gradient(rgba(0, 0, 0, 0.50) 500px, black),
+    url(imagens/banner.webp);
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+}
+
+header{
+    display: flex;
+        justify-content: space-between;
+
+    padding: 20px;
+}
+
+header p{
+    color: white;
+    font-family: var(--fonteTexto);
+
+    font-size: 12px;
+}
+
+header img{
+    width: 62px;
+}
+
+.textosCapa{ 
+    color: white;
+
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    padding: 64px;
+}
+
+.titulo h1{
+    font-family: var(--fonteTitulo);
+    text-transform: uppercase;
+
+    font-size: 72px;
+    line-height: 62px;
+}
+
+.titulo span{
+    font-size: 24px;
+    line-height: 42px;
+    padding-left: 16px;
+}
+
+.texto{
+    font-family: var(--fonteTexto);
+    text-align: right;
+
+    width: 40%;
+    font-size: 24px;
+}
+
+.escolhaCidade{
+    display: flex;
+        justify-content: flex-end;
+        text-transform: uppercase;
+    
+    font-size: 10px;
+    margin-top: 14px;
+    gap: 2px;
+}
+
+hr {
+    width: 26%;
+
+    margin-left: auto;
+}
+
+.comercial{
+    height: 112vh;
+    
+    background: 
+    radial-gradient(rgba(0, 0, 0, 0.50),  black), 
+    url(imagens/bg.webp),
+    radial-gradient(rgba(0, 0, 0, 0.60), black);
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.escolha{
+    padding: 20px;
+}
+
+.cabecalho {
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    margin: 0 90px ;
+}
+
+.cabecalho h2{
+    color: white;
+    font-family: var(--fonteTexto);
+    text-transform: uppercase;
+
+    font-size: 12px;
+}
+
+.comprar{
+    display: flex;
+        align-items: center;   
+    
+    gap: 6px;
+    color: white;
+    font-size: 8px;
+}
+
+.comprar p{
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--fonteTexto);
+
+    font-size: 8px;
+}
+
+.comprar img{
+    width: 12px;
+}
+
+#hrComprar {
+    width: 8%;
+    margin-right: 90px;
+}
+
+
+.cidades{
+    display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    margin: 10px 80px ;
+}
+
+.cidades img{
+    width: 355px;
+}
+
+.cidades legend{
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.cidades legend p{
+    color: white;
+    font-family: var(--fonteTexto);
+    font-size: 10px;
+    
+    padding: 10px;
+
+    margin-top: -40px;
+}
+
+
+.comercial header{
+    margin: 20px 90px;
+}
+
+.cilio{
+    width: 110px;
+}
+
+
+.marcas{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    margin: 30px 90px;
+    padding: 20px;
+}
+
+.marcas div{
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+}
+
+.marcas img{
+    width: 30px;
+}
+
+.marcas legend{
+    font-size: 50%;
+    color: white;
+    font-family: var(--fonteTexto);
+    
+    margin-top: 10px;
+}
+
+
+.final{
+    line-height: 35px;
+}
+
+.agradecimento{ 
+    color: white; 
+    font-family: var(--fonteTexto);
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 60px;
+    
+    display: flex;
+        justify-content: center; 
+}
+
+.agradecimentoCidades{
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    gap: 18px;
+}
+
+.agradecimentoCidades p {
+    color: white;
+    font-family: var(--fonteTexto);
+
+    font-size: 10px;
+}
+
+footer{
+    height: 80vh;
+    
+    background: 
+    radial-gradient(rgba(0, 0, 0, 0.20), 300px, rgb(0, 0, 0)),
+    url(imagens/bg-footer.webp);
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.textosfooter{ 
+    color: white;
+
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    margin: 0 42px;
+}
+
+.titulo h1{
+    font-family: var(--fonteTitulo);
+    text-transform: uppercase;
+    font-size: 72px;
+    line-height: 62px;
+}
+
+.titulo span{
+    font-size: 24px;
+    line-height: 42px;
+    padding-left: 16px;
+}
+
+
+.instrucoes{
+    display: flex;
+
+    font-family: var(--fonteTexto);
+
+    gap: 32px;
+}
+
+.instrucoes h2{
+    text-transform: uppercase;
+
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+.redesSociais img{
+    width: 20px;
+}
+
+.parceiro img{
+    width: 92px;
+}
+
+.institucional p{
+    font-size: 8px;
+    padding: 2px;
+}
+
+
+footer header{
+    display: flex;
+        justify-content: space-between;
+
+    padding: 70px 42px;
+}
+
+header img{
+    width: 68px;
+}
+
+
+.theExperience{
+    text-transform: uppercase;
+    font-size: 950%;
+    color: rgba(250, 250, 250, 0.035);
+
+    display: flex;
+        justify-content: center;
+        align-items: end;
+        white-space: nowrap;
+}          
