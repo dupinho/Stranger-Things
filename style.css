@@ -2,7 +2,11 @@
     --fonteTitulo: "Playfair Display", serif;
     --fonteTexto: "Poppins", sans-serif;
     --tamanhoFonte: 10px;
-    --gradientRadialBackground: radial-gradient(rgba(0, 0, 0, 0.50) 500px, black);
+    --corTexto: white;
+    --corFundo: black;
+    --margemLateralDesktop: 90px;
+    --margemLateralMobile: 20px;
+    --gradientRadialBackground: radial-gradient(rgba(0, 0, 0, 0.50) 500px, var(--corFundo));
 }
 
 *{
@@ -32,7 +36,7 @@ header{
 }
 
 header p{
-    color: white;
+    color: var(--corTexto);
     font-family: var(--fonteTexto);
 
     font-size: calc(var(--tamanhoFonte) * 1.2);
@@ -43,7 +47,7 @@ header img{
 }
 
 .textosCapa{ 
-    color: white;
+    color: var(--corTexto);
 
     display: flex;
         justify-content: space-between;
@@ -94,14 +98,13 @@ hr {
     height: 112vh;
     
     background: 
-    radial-gradient(rgba(0, 0, 0, 0.50),  black), 
+    radial-gradient(rgba(0, 0, 0, 0.50),  var(--corFundo)),
     url(imagens/bg.webp),
-    radial-gradient(rgba(0, 0, 0, 0.60), black);
+    radial-gradient(rgba(0, 0, 0, 0.60), var(--corFundo));
 
     background-size: cover;
     background-position: center;
 }
-
 
 .escolha{
     padding: 20px;
@@ -112,11 +115,11 @@ hr {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-    margin: 0 90px ;
+    margin: 0 var(--margemLateralDesktop);
 }
 
 .cabecalho h2{
-    color: white;
+    color: var(--corTexto);
     font-family: var(--fonteTexto);
     text-transform: uppercase;
 
@@ -128,12 +131,12 @@ hr {
         align-items: center;   
     
     gap: 6px;
-    color: white;
+    color: var(--corTexto);
     font-size: calc(var(--tamanhoFonte) * 0.8);
 }
 
 .comprar p{
-    color: white;
+    color: var(--corTexto);
     text-transform: uppercase;
     font-family: var(--fonteTexto);
 
@@ -146,9 +149,8 @@ hr {
 
 #hrComprar {
     width: 8%;
-    margin-right: 90px;
+    margin-right: var(--margemLateralDesktop);
 }
-
 
 .cidades{
     display: flex;
@@ -169,7 +171,7 @@ hr {
 }
 
 .cidades legend p{
-    color: white;
+    color: var(--corTexto);
     font-family: var(--fonteTexto);
     font-size: var(--tamanhoFonte);
     
@@ -178,22 +180,20 @@ hr {
     margin-top: -40px;
 }
 
-
 .comercial header{
-    margin: 20px 90px;
+    margin: 20px var(--margemLateralDesktop);
 }
 
 .cilio{
     width: 110px;
 }
 
-
 .marcas{
     display: flex;
         justify-content: space-between;
         align-items: center;
 
-    margin: 30px 90px;
+    margin: 30px var(--margemLateralDesktop);
     padding: 20px;
 }
 
@@ -209,19 +209,18 @@ hr {
 
 .marcas legend{
     font-size: 50%;
-    color: white;
+    color: var(--corTexto);
     font-family: var(--fonteTexto);
     
     margin-top: 10px;
 }
 
-
 .final{
     line-height: 35px;
 }
 
-.agradecimento{ 
-    color: white; 
+.agradecimento{
+    color: var(--corTexto);
     font-family: var(--fonteTexto);
     text-transform: uppercase;
     font-size: calc(var(--tamanhoFonte) * 1.5);
@@ -240,7 +239,7 @@ hr {
 }
 
 .agradecimentoCidades p {
-    color: white;
+    color: var(--corTexto);
     font-family: var(--fonteTexto);
 
     font-size: var(--tamanhoFonte);
@@ -250,7 +249,7 @@ footer{
     height: 80vh;
     
     background: 
-    radial-gradient(rgba(0, 0, 0, 0.20), 300px, rgb(0, 0, 0)),
+    radial-gradient(rgba(0, 0, 0, 0.20), 300px, var(--corFundo)),
     url(imagens/bg-footer.webp);
 
     background-size: cover;
@@ -264,7 +263,7 @@ footer{
 
 
 .textosfooter{ 
-    color: white;
+    color: var(--corTexto);
 
     display: flex;
         justify-content: space-between;
@@ -315,7 +314,6 @@ footer{
     padding: 2px;
 }
 
-
 footer header{
     display: flex;
         justify-content: space-between;
@@ -326,7 +324,6 @@ footer header{
 header img{
     width: 68px;
 }
-
 
 .theExperience{
     text-transform: uppercase;
@@ -354,7 +351,7 @@ header img{
     }
 
     header{
-        padding: 18px 20px;
+        padding: 18px var(--margemLateralMobile);
     }
 
     header img{
@@ -363,7 +360,7 @@ header img{
 
     .textosCapa{
         display: block;
-        padding: 22px 20px;
+        padding: 22px var(--margemLateralMobile);
     }
 
     .titulo h1{
@@ -412,7 +409,7 @@ header img{
     }
 
     .escolha{
-        padding: 24px 20px 10px;
+        padding: 24px var(--margemLateralMobile) 10px;
     }
 
     .cabecalho{
@@ -462,7 +459,7 @@ header img{
     .comercial header{
         flex-direction: column;
         gap: 28px;
-        margin: 28px 20px;
+        margin: 28px var(--margemLateralMobile);
     }
 
     .comercial header img{
@@ -477,7 +474,7 @@ header img{
         flex-direction: column;
         align-items: stretch;
         gap: 30px;
-        margin: 30px 20px;
+        margin: 30px var(--margemLateralMobile);
         padding: 0;
     }
 
@@ -505,7 +502,7 @@ header img{
 
     .final{
         line-height: 1.5;
-        padding: 24px 20px 36px;
+        padding: 24px var(--margemLateralMobile) 36px;
     }
 
     .agradecimento{
@@ -535,7 +532,7 @@ header img{
         flex-direction: column;
         align-items: flex-start;
         gap: 36px;
-        margin: 0 20px;
+        margin: 0 var(--margemLateralMobile);
     }
 
     .textosfooter .titulo h1{
@@ -574,7 +571,7 @@ header img{
     }
 
     footer header{
-        padding: 36px 20px;
+        padding: 36px var(--margemLateralMobile);
     }
 
     footer header img{
