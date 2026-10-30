@@ -336,7 +336,7 @@ header img{
         white-space: nowrap;
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     .capa{
         height: 100vh;
         min-height: 680px;
@@ -345,7 +345,6 @@ header img{
         linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
         url(imagens/bg-mobile.png);
 
-        background-size: cover;
         background-attachment: scroll;
         background-position: center;
     }
@@ -584,7 +583,7 @@ header img{
     }
 }
 
-@media (min-width: 769px) and (max-width: 1199px){
+@media (min-width: 768px) and (max-width: 1199px){
     .capa{
         min-height: 620px;
         background-attachment: scroll;
