@@ -587,6 +587,179 @@ header img{
     }
 }
 
-@media (min-width: 769px) and (max-width: 1023px){
-    /*! diagramação para leptop*/
+@media (min-width: 769px) and (max-width: 1199px){
+    .capa{
+        min-height: 620px;
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    .textosCapa{
+        padding: 5vw;
+    }
+
+    .titulo h1{
+        font-size: clamp(42px, 6vw, 62px);
+        line-height: 0.98;
+    }
+
+    .titulo span{
+        font-size: clamp(13px, 1.8vw, 18px);
+        line-height: 1.5;
+        padding-left: 8px;
+    }
+
+    .texto{
+        width: 42%;
+        font-size: clamp(16px, 2vw, 20px);
+    }
+
+    .comercial{
+        height: auto;
+        min-height: 112vh;
+        padding-bottom: 32px;
+    }
+
+    .escolha{
+        padding: 20px 4vw;
+    }
+
+    .cabecalho{
+        margin: 0 0 16px;
+    }
+
+    .cabecalho h2{
+        font-size: 15px;
+    }
+
+    #hrComprar{
+        margin-right: 0;
+    }
+
+    .cidades{
+        gap: 14px;
+        margin: 10px 0;
+    }
+
+    .cidades > div{
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .cidades img{
+        display: block;
+        width: 100%;
+    }
+
+    .cidades legend{
+        justify-content: space-between;
+        margin-top: -32px;
+    }
+
+    .cidades legend p{
+        font-size: 8px;
+        padding: 8px;
+        margin-top: 0;
+    }
+
+    .comercial header{
+        margin: 20px 4vw;
+    }
+
+    .comercial header img{
+        width: 82px;
+    }
+
+    .comercial header .cilio{
+        width: 100px;
+    }
+
+    .marcas{
+        gap: 20px;
+        margin: 24px 4vw;
+        padding: 12px 0;
+    }
+
+    .marcas div{
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .marcas img{
+        width: 36px;
+        max-height: 28px;
+        object-fit: contain;
+    }
+
+    .marcas legend{
+        font-size: 8px;
+        line-height: 1.5;
+    }
+
+    .marcas br{
+        display: none;
+    }
+
+    .final{
+        line-height: 1.5;
+        padding: 0 4vw;
+    }
+
+    .agradecimento{
+        text-align: center;
+        font-size: 14px;
+        margin: 32px 0 14px;
+    }
+
+    .agradecimentoCidades{
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        padding: 0 4vw;
+    }
+
+    .agradecimentoCidades p{
+        font-size: 9px;
+    }
+
+    footer{
+        height: 75vh;
+        min-height: 500px;
+        background-attachment: scroll;
+    }
+
+    .textosfooter{
+        gap: 24px;
+        margin: 0 4vw;
+    }
+
+    .textosfooter .titulo h1{
+        font-size: clamp(42px, 6vw, 62px);
+        line-height: 0.98;
+    }
+
+    .textosfooter .titulo span{
+        font-size: clamp(13px, 1.8vw, 18px);
+        line-height: 1.5;
+        padding-left: 8px;
+    }
+
+    .instrucoes{
+        gap: clamp(14px, 2.5vw, 26px);
+    }
+
+    .instrucoes h2{
+        font-size: 9px;
+    }
+
+    .parceiro img{
+        width: 78px;
+    }
+
+    footer header{
+        padding: 42px 4vw;
+    }
+
+    .theExperience{
+        font-size: clamp(500%, 9vw, 800%);
+    }
 }
